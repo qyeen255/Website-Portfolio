@@ -321,29 +321,6 @@ p {
     text-align: center;
 }
 
-.skill-btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 130px;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 10px;
-    border:2px solid #efbba0;
-    background-color: #efd8cc;
-    color: #5E6B6B;
-    margin:50px;
-    margin-left: auto;
-    margin-bottom:20px;
-}
-
-.skill-btn:hover {
-    background-color: #EACCBC;
-    box-shadow: 0 4px 12px rgba(34, 57, 60, 0.3);
-}
-
-
 /*projects*/
 .projects {
     background-color: #E3E4DF;
@@ -425,27 +402,6 @@ p {
     align-items: center;
     gap: 60px;
     padding: 50px;
-}
-
-.project-btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 130px;
-    font-weight: bold;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 10px;
-    border:2px solid #efbba0;
-    background-color: #efd8cc;
-    color: #5E6B6B;
-    margin:50px;
-    margin-left: auto;
-}
-
-.project-btn:hover {
-    background-color: #EACCBC;
-    box-shadow: 0 4px 12px rgba(34, 57, 60, 0.3);
 }
 
 /*contact*/
