@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">Coyeen</div>
+
+        <nav class="site-nav">
+            <a href="home.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>About Me</h1>
+            <div class="intro-content">
+                <img src="images/me.jpg" alt="profile" class="profile">
+                <div class="intro-text">
+                    <h2>Who Am I?</h2>
+                    <p>Hi, I'm Teo Coyeen. I was born and raised in Alor Setar, Kedah. I am a Diploma in Information 
+                        Technology student currently studying at Taylor's College. 
+                    </p>
+
+                    <p>During my secondary school years, I was actively involved in Scout
+                        activites and successfully earned the King Scout Award. In additional, I
+                        had the opportunity to participate in and help organize camping activities. These
+                        experiences strengthened my leadership, teamwork and communication skills.
+                    </p>
+
+                    <p>As an IT student, I have gained knowledge in web development, programming and
+                        database systems. I have experience working with C Programming, Java and SQL through coursework.
+                        My goal is to continuously improve my technical skills and create meaningful digital
+                        experiences that are both functional and user-friendly.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievement">
+            <h2>Achievements</h2>
+            <div class="grid-achievement">
+
+                <article class="achievement-card">
+                    <i class="fa-solid fa-trophy icon"></i>
+                    <h3>King Scout Award</h3>
+                    <p>Achieved the highest rank in scouting.</p>
+                    <a href="#" class="btn" onclick="openAchievement('scout'); return false;">Learn More</a>
+                </article>
+
+                <article class="achievement-card">
+                    <i class="fa-solid fa-campground icon"></i>
+                    <h3>Camp Organizer</h3>
+                    <p>Organized and participated in school camping activities.</p>
+                    <a href="#" class="btn" onclick="openAchievement('camp'); return false;">Learn More</a>
+                </article>
+
+                <article class="achievement-card">
+                    <i class="fa-solid fa-laptop-code icon"></i>
+                    <h3>Oracle Java</h3>
+                    <p>Completed Oracle Academy courses in Java Programming.</p>
+                    <a href="#" class="btn" onclick="openAchievement('java'); return false;">Learn More</a>
+                </article>
+            </div>
+
+            <!--Popup Window-->
+            <div id="achievement-modal" class="achievement-modal">
+                <div class="modal-content">
+                    <a href="#" class="modal-close" onclick="closeAchievement();return false;">&times;</a> <!--x close, return false: avoid turn to the top of the page-->
+
+                    <h2 id="modal-title"></h2>
+
+                    <img id="modal-image" src="" alt="Achievement photo">
+
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skill">
+            <h2>Skill</h2>
+            <div class="container-skills">
+                <div class="skills">
+                    C Programming
+                </div>
+
+                <div class="skills">
+                    Java
+                </div>
+
+                <div class="skills">
+                    SQL
+                </div>
+
+                <div class="skills">
+                    C++
+                </div>
+            </div>
+            <a href="projects.html" class="skill-btn">Projects -></a>
+        </section>
+        
+    </main>
+
+    <footer class="site-footer">
+        <h4>Contact Me</h4>
+        <div class="footer-grid">
+
+            <div class="inner-footer">
+                <i class="fa-solid fa-envelope footer-icon"></i>
+                <a href="mailto:coyeen8869@gmail.com" class="social-link">coyeen8869@gmail.com</a>
+            </div>
+
+            <div class="inner-footer">
+                <i class="fa-brands fa-github footer-icon"></i>
+                <a href="https://github.com/qyeen255" class="social-link" target="_blank">qyeen255</a>
+            </div>
+
+            <div class="inner-footer">
+                <i class="fa-brands fa-instagram footer-icon"></i>
+                <a href="https://www.instagram.com/invites/contact/?utm_source=ig_
+                contact_invite&utm_medium=copy_link&utm_content=3pivg67" class="social-link"
+                    target="_blank">@1024coyeen</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Coyeen's Portfolio.</p>
+        </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
